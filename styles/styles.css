@@ -239,14 +239,19 @@ li > a:hover {
 .newsletter-bloc{
   display: flex;
   justify-self: center;
-  margin: 20px 80px;
-  width: 80%;
+  margin: 20px 150px;
+  width: 90%;
+  background-color: #303030e3;
 }
 
 .email-bloc{
-  background-color: #303030;
+  /*background-color: #303030e3;*/
+  display: flex;
+  flex-direction: column;
+  width: 38%;
 }
 
+/*
 .module-container {
   display: flex;
   justify-content: center;
@@ -254,11 +259,12 @@ li > a:hover {
   background-color: #30303040;
   z-index: -3;
 }
-
+*/
 .news-email-column {
-  padding: 3rem;
-  background-color: #303030e3;
+  padding: 20px 50px;
+  /*background-color: #303030e3;*/
   height: 50%;
+  width: 380px;
 }
 
 .news-heading {
@@ -269,7 +275,6 @@ li > a:hover {
 }
 
 .form-container{
-  margin: 0 40px;
   display: flex;
   justify-content: center;
 }
@@ -289,7 +294,6 @@ li > a:hover {
 
 
 .input-element {
-  width: 25rem;
   padding: 1.2rem;
   border-radius: 15px 0 0 15px;
   background-color: #ddd;
@@ -297,19 +301,23 @@ li > a:hover {
   color: #303030e3;
 }
 
+.btn-wrapper{
+  width: 30%;
+}
 .submit-button {
   font-size: large;
   font-weight: 600;
   background-color: #ddd;
   position: relative;
-  padding: 19px 35px;
+  padding: 19px;
   border-radius: 0 15px 15px 0;
-  z-index: 1;
+  width: 100%;
 }
 
 .module-text {
   font-size: large;
   color: cadetblue;
+  margin: 35px 0;
 }
 
 .submit-button:hover {

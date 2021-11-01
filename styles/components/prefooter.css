@@ -25,6 +25,8 @@
   text-align: center;
   color: white;
   height: 100%;
+  z-index: auto;
+  position: absolute;
 }
 
 .inside-normal {
@@ -42,4 +44,12 @@ i {
   font-size: 3rem !important;
   color: aliceblue;
   font-weight: 600;
+}
+
+
+#pointer p{
+  z-index: 1;
+  color: white;
+  position: relative;
+  top: 75px;
 }

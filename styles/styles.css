@@ -241,7 +241,7 @@ li > a:hover {
   /*justify-self: center;*/
   margin: 20px 150px;
   width: 80%;
-  height: 510px;
+  height: 530px;
   background-color: #303030e3;
 }
 
@@ -341,7 +341,7 @@ li > a:hover {
 
 .image-container{
   background-size: contain;
-  height: 510px;
+  height: 530px;
   width: auto;
   overflow: visible;
 }

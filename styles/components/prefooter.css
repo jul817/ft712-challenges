@@ -14,7 +14,7 @@
   width: 20%;
   background-color: #797979;
   z-index: -1;
-
+  margin-left: 1px;
 }
 
 .inside {
@@ -57,11 +57,11 @@ i {
 }
 
 i.fas.fa-caret-right{
-  font-size: 3.5rem !important;
+  font-size: 3.8rem !important;
   z-index: 1;
   position: relative;
   top: 63px;
-  right: 2px;
+  right: 6px;
   font-weight: 600;
 }
 

@@ -94,7 +94,7 @@
             <a class="btn btn-cta" href="http://www.lewagon.com">Discover Coding</a>
         </div>
     </div>
-
+    <div id="content-section-centered">
     <div class="content-section">
         <!--office section-->
         <svg
@@ -217,8 +217,8 @@
 
         <!--Office Text Section-->
         <div class="team-text-section">
-          <h2>Our Core Team</h2>
-          <p>
+          <h2 class="team-text-section-item">Our Core Team</h2>
+          <p class="team-text-section-item">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ab
             unde eum numquam ullam quam magnam exercitationem accusantium a sequi,
             labore error sapiente, ducimus incidunt fuga excepturi quaerat beatae
@@ -228,55 +228,61 @@
             minus delectus, eos autem!
           </p>
         </div>
+        </div>
     </div>
 
     <!--cards section-->
     <div class="container-card">
-      <h2>Our Available Foodies</h2>
+      <h2 class="container-card-title">Our Available Foodies</h2>
+      <div class="cards">
+        <a class="card-category" style="background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)  ), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg);" href="#">
+          Breakfast
+        </a>
+        <a class="card-category" style=" background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg); " href="#">
+          Lunch
+        </a>
+        <a class="card-category" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg);" href="#">
+          Dinner
+        </a>
+      </div>
     </div>
-    <div class="cards">
-      <a
-        class="card-category"
-        style="
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.3)
-            ),
-            url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg);
-        "
-        href="#"
-      >
-        Breakfast
-      </a>
 
-      <a
-        class="card-category"
-        style="
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.3)
-            ),
-            url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg);
-        "
-        href="#"
-      >
-        Lunch
-      </a>
 
-      <a
-        class=""
-        style="
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.3)
-            ),
-            url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg);
-        "
-        href="#"
-      >
-        Dinner
-      </a>
+
+    <div class="newsletter-bloc">
+      <div class="email-bloc">
+        <div class="news-heading">
+          <h2 class="module-title">Newsletter</h2>
+          <p class="module-text">Receive our offers, news and events straight in your mailbox</p>
+        </div>
+        <div class="form-container">
+          <form class="form">
+            <div>
+              <div class="input-container">
+                <label class="email-input">
+                  <input name="email" autocomplete="off" type="email" class="input-element" placeholder="Your Email" />
+                </label>
+              </div>
+            </div>
+            <div class="form-submit">
+              <div class="btn-wrapper">
+                <button class="submit-button"><span>Submit</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="news_footer">
+          <a href="https://www.facebook.com/" target="_blank"><span>Facebook</span></a>
+          <a href="https://www.instagram.com/" target="_blank"><span>Instagram</span></a>
+          <a href="https://fr.pinterest.com/" target="_blank"><span>Pinterest</span></a>
+          <a href="https://twitter.com/" target="_blank"><span>Twitter</span></a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1592727995117-4cdc7ee6fcb4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="Globe trotter man">
+      </div>
     </div>
+
 
     <!--newsletter Section-->
     <div class="newsletter-bloc">

@@ -16,10 +16,76 @@ li > a:hover {
   border-bottom: solid 1px #303030;
 }
 
-.team-text-section {
+
+#content-section-centered{
+  display: flex;
+  justify-content: center;
+}
+.content-section{
   width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
+#svg-office{
+
+}
+
+
+
+.team-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-self: normal;
+  margin: 20px;
+}
+
+.team-text-section p{
+  text-justify: inter-word;
+  text-align: justify;
+  margin: 0;
+}
+
+
+.team-text-section-item{
+  margin: 10px 0;
+}
+
+
+.container-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-card-title{
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.card-category {
+  margin: 30px 15px;
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
 .nav-wrapper {
   display: flex;
   justify-content: center;
@@ -169,28 +235,16 @@ li > a:hover {
   display: block;
 }
 
-.cards {
-}
 
-svg {
-  width: 50vw;
-}
-
-.card-category {
-  margin: 60px 15px 60px 15px;
-  width: 28%;
-  height: 35vh;
-  background-size: cover;
-  background-position: center;
+.newsletter-bloc{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  justify-self: center;
+  margin: 20px 80px;
+  width: 80%;
+}
+
+.email-bloc{
+  background-color: #303030;
 }
 
 .module-container {
@@ -211,12 +265,13 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding: 0 30px;
 }
 
-.module-title {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 600;
-  font-size: 30px;
+.form-container{
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .form {
@@ -225,6 +280,13 @@ svg {
   align-items: center;
   margin-bottom: 3rem;
 }
+.module-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+
 
 .input-element {
   width: 25rem;

@@ -13,8 +13,8 @@
   height: 250px;
   width: 20%;
   background-color: #797979;
-  z-index: -20;
-  margin-left: 1px;
+  z-index: -1;
+
 }
 
 .inside {
@@ -27,6 +27,7 @@
   height: 100%;
   z-index: auto;
   position: absolute;
+  padding-left: 20px;
 }
 
 .inside-normal {
@@ -38,6 +39,7 @@
   text-align: center;
   color: white;
   height: 100%;
+  margin-top: 10px;
 }
 
 i {
@@ -49,7 +51,24 @@ i {
 
 #pointer p{
   z-index: 1;
-  color: white;
+
   position: relative;
   top: 75px;
+}
+
+i.fas.fa-caret-right{
+  font-size: 3.5rem !important;
+  z-index: 1;
+  position: relative;
+  top: 63px;
+  right: 2px;
+  font-weight: 600;
+}
+
+i#caret-right-white.fas.fa-caret-right{
+  color: white;
+}
+
+i#caret-right-black.fas.fa-caret-right{
+  color: #303030;
 }

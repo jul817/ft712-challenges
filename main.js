@@ -53,9 +53,9 @@ const toggleShow = () => {
 };
 
 
-const collectionSummer = document.getElementById('summer-collection');
-const collectionWinter = document.getElementById('winter-collection');
-const collectionAutumn = document.getElementById('autumn-collection');
+// const collectionSummer = document.getElementById('summer-collection');
+// const collectionWinter = document.getElementById('winter-collection');
+// const collectionAutumn = document.getElementById('autumn-collection');
 const collectionList = document.querySelectorAll('.collection');
 // console.log(collectionName.text.toLowerCase());
 collectionList.forEach(element => {
@@ -71,6 +71,25 @@ collectionList.forEach(element => {
    // console.log(collectionNameText);
 });
 
+
+const dropImage = document.querySelectorAll('.drop-image-item');
+dropImage.forEach(element => {
+  const dropImageItem = element.firstElementChild.attributes[0].value;
+  element.addEventListener('click', (event) => {
+    const bannerImage = document.querySelector('.hero-banner');
+    bannerImage.style.backgroundImage = `url('${dropImageItem}')`;
+});
+});
+
+
+
+// const dropImageItem = dropImage.firstElementChild.attributes[0].value;
+// console.log(dropImageItem);
+// dropImage.addEventListener('click', (event) => {
+//   const bannerImage = document.querySelector('.hero-banner');
+//   bannerImage.style.backgroundImage = `url('${dropImageItem}')`;
+//   console.log(bannerImage);
+// });
 
 
 // collectionName.addEventListener('click', toggleShow);
@@ -124,4 +143,18 @@ collectionList.forEach(element => {
 
 // collectionName.addEventListener('click', (event) => {
 //   const
+// });
+
+
+
+
+
+
+// const dropImage = document.querySelector('#image-winter');
+// const dropImageItem = dropImage.firstElementChild.attributes[0].value;
+// console.log(dropImageItem);
+// dropImage.addEventListener('click', (event) => {
+//   const bannerImage = document.querySelector('.hero-banner');
+//   bannerImage.style.backgroundImage = `url('${dropImageItem}')`;
+//   console.log(bannerImage);
 // });

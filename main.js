@@ -41,3 +41,9 @@ contact.addEventListener('click', (event) => {
     droplistcontact.classList.toggle("show");
 
 });
+
+
+const collectionimage = document.querySelector('#autumn-collection');
+collectionimage.addEventListener('click', (event) => {
+  alert('Hello');
+});

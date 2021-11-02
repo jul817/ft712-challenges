@@ -193,10 +193,37 @@ li > a:hover {
   display: inline-block;
 }
 
+/*.dropdown-images {
+   position: relative;
+}*/
+
 .dropdown-images > a > img {
   width: 300px;
   border-radius: 4px;
 }
+
+#image-autumn {
+position: absolute;
+z-index: 1;
+}
+
+#image-summer {
+position: absolute;
+z-index: auto;
+}
+
+#image-winter {
+position: absolute;
+z-index: auto;
+}
+
+#image-spring {
+position: relative;
+z-index: 2;
+}
+
+
+
 .dropdown-content-right {
   display: none;
   position: absolute;

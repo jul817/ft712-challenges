@@ -27,7 +27,7 @@
             <div class="left-menu">
                 <ul>
                     <li class="dropdown">
-                      <a href="#" class="dropbtn">Collections</a>
+                      <a href="#" id="dropbtn-left" class="dropbtn">Collections</a>
                       <div class="dropdown-content-left">
                         <div>
                          <a href="#">Summer</a>
@@ -54,7 +54,7 @@
             <div class="right-menu">
                 <ul>
                     <li class="dropdown">
-                        <a href="#" class="dropbtn">Contact Us</a>
+                        <a href="#" id="dropbtn-right" class="dropbtn">Contact Us</a>
                         <div class="dropdown-content-right">
                         <a href="#">Head Office</a>
                         <a href="#">Sales Depts</a>
@@ -337,22 +337,12 @@
         <p> © copyright Fabrice Madré | Le Wagon (Web development Bootcamp) | Les Kokottes, Moka, Mauritius </p>
     </div>
     <!-- JQuery & Javascript Scripts-->
-    <script>
+    <script src="main.js"> </script>
 
-      // ***navbar JS***
-        const navbar = document.querySelector(".navbar");
-        const navWrapper = document.querySelector(".nav-wrapper")
-        window.addEventListener("scroll", () => {
-        if (window.scrollY >= window.innerHeight / 4) {
-            navbar.classList.add("navbar-white");
-            navWrapper.classList.add("top");
-        } else {
-            navbar.classList.remove("navbar-white");
-            navWrapper.classList.remove("top");
-        }
-        });
+         </body >
+
+    </html >
+
+
 
         </script>
-    </body>
-
-    </html>

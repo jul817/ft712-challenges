@@ -207,6 +207,10 @@ position: absolute;
 z-index: 1;
 }
 
+#image-summer.show {
+  z-index: 2;
+}
+
 #image-summer {
 position: absolute;
 z-index: auto;
@@ -216,12 +220,18 @@ z-index: auto;
 position: absolute;
 z-index: auto;
 }
+#image-winter.show {
+  z-index: 2;
+}
 
 #image-spring {
 position: relative;
-z-index: 2;
+z-index: auto;
 }
 
+#image-spring.show {
+z-index: 2;
+}
 
 
 .dropdown-content-right {

@@ -31,6 +31,13 @@ collection.addEventListener('click', (event) => {
  // }
 });
 
+// const documentBody = document.body;
+// const dropListCollection = document.querySelector(".dropdown-content-left");
+// documentBody.addEventListener('click', (event) => {
+//   if (dropListCollection.classList.value.includes('show')) {
+//     dropListCollection.classList.remove('show');
+//   }
+// });
 
 
 // Contact Us dropdown content
@@ -57,15 +64,21 @@ const toggleShow = () => {
 // const collectionWinter = document.getElementById('winter-collection');
 // const collectionAutumn = document.getElementById('autumn-collection');
 const collectionList = document.querySelectorAll('.collection');
+const collectionAutumnImage = document.getElementById('image-autumn');
+// collectionAutumnImage.style.zIndex = 1;
 // console.log(collectionName.text.toLowerCase());
 collectionList.forEach(element => {
-  const collectionName = document.getElementById(`${element.id}`);
-  console.log(collectionName);
-  const collectionNameText = collectionName.text.toLowerCase();
+
+  // console.log(collectionName);
+  // const collectionNameText = collectionName.text.toLowerCase();
   element.addEventListener('click', (event) => {
-    console.log(collectionNameText);
+    const collectionName = document.getElementById(`${element.id}`);
+    const collectionNameText = collectionName.text.toLowerCase();
     const collectionNameImage = document.getElementById(`image-${collectionNameText}`);
-    collectionNameImage.classList.toggle("show");
+    console.log(collectionNameText);
+    // const collectionNameImage = document.getElementById(`image-${collectionNameText}`);
+    // collectionNameImage.classList.toggle("show");
+    collectionNameImage.style.zIndex += 1;
   });
  // const collectionNameText = collectionName.text.toLowerCase();
    // console.log(collectionNameText);
@@ -81,6 +94,28 @@ dropImage.forEach(element => {
 });
 });
 
+
+
+
+
+const button = document.querySelector('.submit-button');
+button.addEventListener('click', (event) => {
+  event.preventDefault();
+  const emailInput = document.querySelector('.input-element');
+  const accountEmail = document.querySelector('.account');
+  accountEmail.textContent = emailInput.value;
+  window.location.assign('localhost:8000/email');
+
+  emailInput.value ="";
+});
+
+
+// const documentBody = document.body;
+// documentBody.addEventListener('click', (event) => {
+//   if(dropListCollection.classList.value.includes('show')){
+//     dropListCollection.classList.remove('show');
+//   }
+// });
 
 
 // const dropImageItem = dropImage.firstElementChild.attributes[0].value;

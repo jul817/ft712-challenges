@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -39,6 +40,7 @@ li > a:hover {
   flex-direction: column;
   justify-self: normal;
   margin: 20px;
+  width: 300px;
 }
 
 .team-text-section p{
@@ -207,31 +209,31 @@ position: absolute;
 z-index: 1;
 }
 
-#image-summer.show {
+/* #image-summer.show {
   z-index: 2;
-}
+} */
 
 #image-summer {
 position: absolute;
-z-index: auto;
+z-index: 1;
 }
 
 #image-winter {
 position: absolute;
-z-index: auto;
+z-index: 1;
 }
-#image-winter.show {
+/* #image-winter.show {
   z-index: 2;
-}
+} */
 
 #image-spring {
 position: relative;
-z-index: auto;
+z-index: 1;
 }
 
-#image-spring.show {
+/* #image-spring.show {
 z-index: 2;
-}
+} */
 
 
 .dropdown-content-right {

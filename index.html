@@ -19,6 +19,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- <script>
+      const stopEvent = (event) => {
+        emailAccount = document.querySelector('.account');
+        emailAccount.textContent = emailInput.value;
+        event.Propagation();
+      }
+
+    </script> -->
+
   </head>
   <body>
     <div class="nav-wrapper">
@@ -74,7 +84,7 @@
                         <a href="#">Grand Baie</a>
                         </div>
                     </li>
-                    <li><a href="#">Your Account</a></li>
+                    <li class="account"><a href="#">Your Account</a></li>
                 </ul>
             </div>
         </div>

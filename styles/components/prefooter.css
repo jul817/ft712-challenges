@@ -64,18 +64,6 @@ i {
   margin-top: 50px;
 }
 
-/* #pointer-child > h3 {
-  margin: 15px;
-}
-
-#pointer-child > p {
-  margin-top: 35px;
-}
-
-#pointer p{
-  margin-top: 30px;
-} */
-
 i.fas.fa-caret-right{
   font-size: 3.8rem !important;
   z-index: 1;

@@ -1,3 +1,9 @@
+.pf-wrapper {
+  display: flex;
+  width: 85%;
+  margin: 50px 0;
+}
+
 .pf-index {
   position: relative;
   left: 10px;
@@ -35,7 +41,11 @@
   text-align: center;
   color: white;
   height: 100%;
-  margin-top: 25px;
+  margin-top: 10px;
+}
+
+.inside-normal >p {
+  margin-top: 0px;
 }
 
 i {
@@ -46,26 +56,31 @@ i {
 
 #pointer {
   height: 0px;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 #pointer-child{
   height: 0px;
-  margin-top: 45px;
+  margin-top: 50px;
+}
+
+/* #pointer-child > h3 {
+  margin: 15px;
+}
+
+#pointer-child > p {
+  margin-top: 35px;
 }
 
 #pointer p{
-  z-index: 1;
-
-  position: relative;
-  top: 75px;
-}
+  margin-top: 30px;
+} */
 
 i.fas.fa-caret-right{
   font-size: 3.8rem !important;
   z-index: 1;
   position: relative;
-  top: 63px;
+  top: 10px;
   right: 6px;
   font-weight: 600;
 }

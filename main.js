@@ -64,21 +64,26 @@ const toggleShow = () => {
 // const collectionWinter = document.getElementById('winter-collection');
 // const collectionAutumn = document.getElementById('autumn-collection');
 const collectionList = document.querySelectorAll('.collection');
-const collectionAutumnImage = document.getElementById('image-autumn');
+const collectionImage = document.getElementById('image-autumn');
 // collectionAutumnImage.style.zIndex = 1;
 // console.log(collectionName.text.toLowerCase());
 collectionList.forEach(element => {
-
+  const collectionName = document.getElementById(`${element.id}`);
+  const collectionNameText = collectionName.text.toLowerCase();
+  const collectionNameImage = document.getElementById(`image-${collectionNameText}`);
+  const collectionImageValue = collectionNameImage.firstElementChild.attributes[0].value;
+  console.log(collectionImageValue);
   // console.log(collectionName);
   // const collectionNameText = collectionName.text.toLowerCase();
   element.addEventListener('click', (event) => {
-    const collectionName = document.getElementById(`${element.id}`);
-    const collectionNameText = collectionName.text.toLowerCase();
-    const collectionNameImage = document.getElementById(`image-${collectionNameText}`);
+    // const collectionName = document.getElementById(`${element.id}`);
+    // const collectionNameText = collectionName.text.toLowerCase();
+    // const collectionNameImage = document.getElementById(`image-${collectionNameText}`);
     console.log(collectionNameText);
+    collectionImage.firstElementChild.attributes[0].value = `${collectionImageValue}`;
     // const collectionNameImage = document.getElementById(`image-${collectionNameText}`);
     // collectionNameImage.classList.toggle("show");
-    collectionNameImage.style.zIndex += 1;
+    // collectionNameImage.style.zIndex += 1;
   });
  // const collectionNameText = collectionName.text.toLowerCase();
    // console.log(collectionNameText);
@@ -87,11 +92,12 @@ collectionList.forEach(element => {
 
 const dropImage = document.querySelectorAll('.drop-image-item');
 dropImage.forEach(element => {
-  const dropImageItem = element.firstElementChild.attributes[0].value;
   element.addEventListener('click', (event) => {
+    const dropImageItem = element.firstElementChild.attributes[0].value;
+    console.log(dropImageItem);
     const bannerImage = document.querySelector('.hero-banner');
     bannerImage.style.backgroundImage = `url('${dropImageItem}')`;
-});
+  });
 });
 
 

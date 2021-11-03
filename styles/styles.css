@@ -40,7 +40,6 @@ li > a:hover {
   flex-direction: column;
   justify-self: normal;
   margin: 20px;
-  width: 300px;
 }
 
 .team-text-section p{
@@ -204,32 +203,38 @@ li > a:hover {
   border-radius: 4px;
 }
 
-#image-autumn {
-position: absolute;
-z-index: 1;
-}
+/* #image-autumn {
+position: relative;
+} */
 
 /* #image-summer.show {
   z-index: 2;
 } */
 
 #image-summer {
-position: absolute;
-z-index: 1;
+display: none;
 }
 
 #image-winter {
+display: none;
+}
+
+#image-spring {
+display: none;
+}
+
+/* #image-winter {
 position: absolute;
 z-index: 1;
-}
+} */
 /* #image-winter.show {
   z-index: 2;
 } */
 
-#image-spring {
+/* #image-spring {
 position: relative;
 z-index: 1;
-}
+} */
 
 /* #image-spring.show {
 z-index: 2;
@@ -393,11 +398,7 @@ z-index: 2;
   overflow: visible;
 }
 
-.pf-wrapper {
-  display: flex;
-  width: 80%;
-  margin: 50px 0;
-}
+
 
 
 

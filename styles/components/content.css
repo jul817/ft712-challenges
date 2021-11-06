@@ -34,30 +34,46 @@
 #content-section-centered{
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
+
 .content-section{
-  width: 50%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  max-width: 60%;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
+#svg-office {
+  flex: 60%;
+  max-height: 90%;
+}
 
 /* team section */
 .team-text-section {
+  max-width: 100%;
+  flex: 40%;
   display: flex;
   flex-direction: column;
-  justify-self: normal;
-  margin: 20px;
 }
 
 .team-text-section p{
   text-justify: inter-word;
   text-align: justify;
-  margin: 0;
 }
 
 
 .team-text-section-item{
   margin: 10px 0;
+}
+
+
+@media(max-width: 800px) {
+  .team-text-section {
+    padding: 0 5%;
+  }
+
+  .content-section {
+    display: block;
+  }
 }

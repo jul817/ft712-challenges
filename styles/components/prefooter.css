@@ -1,35 +1,52 @@
+.pf-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 85%;
+}
+
+
 .pf-wrapper {
   display: flex;
-  width: 85%;
+  flex-wrap: wrap;
+  flex: 100%;
+  width: 100%;
   margin: 50px 0;
 }
 
 .pf-index {
-  position: relative;
-  left: 10px;
-  height: 250px;
-  width: 20%;
-  background-color: #303030;
+  flex: 18%;
+  max-width: 20%;
+  background-color: #797979;
+  border: 1px white solid;
   z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+#pf-index-first {
+  background-color: #303030;
 }
 
 .pf-child {
-  position: relative;
-  left: 10px;
-  height: 250px;
-  width: 20%;
+  /* height: 250px; */
+  flex: 18%;
+  max-width: 20%;
   background-color: #797979;
   z-index: -1;
-  margin-left: 1px;
+  border: 1px white solid;
+  padding-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .inside {
   text-align: center;
   color: white;
-  height: 100%;
   z-index: auto;
   position: absolute;
-  padding-left: 20px;
 }
 
 .inside-normal {
@@ -54,22 +71,22 @@ i {
   font-weight: 600;
 }
 
-#pointer {
+/* #pointer {
   height: 0px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 #pointer-child{
   height: 0px;
-  margin-top: 50px;
-}
+  margin-top: 40px;
+} */
 
 i.fas.fa-caret-right{
   font-size: 3.8rem !important;
   z-index: 1;
   position: relative;
   top: 10px;
-  right: 6px;
+  right: 126px;
   font-weight: 600;
 }
 
@@ -79,4 +96,32 @@ i#caret-right-white.fas.fa-caret-right{
 
 i#caret-right-black.fas.fa-caret-right{
   color: #303030;
+}
+
+
+@media(max-width: 800px) {
+
+  .pf-section {
+    max-width: 100%;
+  }
+.pf-wrapper {
+  display: block;
+  padding: 0 20px;
+  max-width: 100%;
+  /* max-height: 100%; */
+}
+
+.pf-index {
+  /* max-height: 100%; */
+  max-width: 100%;
+}
+
+.pf-child {
+  /* max-height: 100%; */
+  max-width: 100%;
+}
+
+.inside {
+  position: relative;
+}
 }

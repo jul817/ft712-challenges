@@ -18,7 +18,8 @@
 
 .card-category {
   margin: 30px 15px;
-  height: 35vh;
+  height: 40vh;
+  max-width: 100%;
   background-size: cover;
   background-position: center;
   display: flex;

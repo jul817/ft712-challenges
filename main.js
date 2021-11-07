@@ -52,7 +52,7 @@ contact.addEventListener('click', (event) => {
   removeShow(contactArray);
 });
 
-// Our shops dropdown content
+// Shops dropdown content
 const shops = document.querySelector('#dropbtn-right-shops');
 const dropListShops = document.querySelector("#dropdown-content-shops");
 shops.addEventListener('click', (event) => {
@@ -61,7 +61,7 @@ shops.addEventListener('click', (event) => {
   removeShow(shopArray);
 });
 
-// Our products dropdown content
+// Products dropdown content
 const products = document.querySelector('#dropbtn-left-products');
 const dropListProducts = document.querySelector("#dropdown-content-products");
 products.addEventListener('click', (event) => {
@@ -70,7 +70,7 @@ products.addEventListener('click', (event) => {
   removeShow(productArray);
 });
 
-// Our services dropdown content
+// Services dropdown content
 const services = document.querySelector('#dropbtn-left-services');
 const dropListServices = document.querySelector("#dropdown-content-services");
 services.addEventListener('click', (event) => {

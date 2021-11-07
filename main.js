@@ -61,6 +61,25 @@ shops.addEventListener('click', (event) => {
   removeShow(shopArray);
 });
 
+// Our products dropdown content
+const products = document.querySelector('#dropbtn-left-products');
+const dropListProducts = document.querySelector("#dropdown-content-products");
+products.addEventListener('click', (event) => {
+  toggleShow(dropListProducts);
+  const productArray = collectionToArray(dropListProducts.children);
+  removeShow(productArray);
+});
+
+// Our services dropdown content
+const services = document.querySelector('#dropbtn-left-services');
+const dropListServices = document.querySelector("#dropdown-content-services");
+services.addEventListener('click', (event) => {
+  toggleShow(dropListServices);
+  const servicesArray = collectionToArray(dropListServices.children);
+  removeShow(servicesArray);
+});
+
+
 // Add image to Collection dropdown menu
 const collectionList = document.querySelectorAll('.collection');
 const collectionImage = document.getElementById('image-autumn');

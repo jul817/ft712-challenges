@@ -12,40 +12,71 @@ window.addEventListener("scroll", () => {
 });
 
 // toggle to show function
-const toggleShow = () => {
-  const collectionNameImage = document.getElementById(`image-${collectionNameText}`);
-  collectionNameImage.classList.toggle("show");
+const toggleShow = (selectedElement) => {
+  selectedElement.classList.toggle("show");
 };
 
+
+
+const removeShow = (selectedElement) => {
+  selectedElement.forEach(element => {
+    element.addEventListener('click', (event) => {
+      element.parentElement.classList.remove("show")
+    });
+  });
+}
+
+const collectionToArray = (collection) => {
+  array = [];
+  for (let i = 0; i < collection.length; i++) {
+    array.push(collection.item(i));
+  }
+  return array;
+}
 
 
 // Collections dropdown content
 const collection = document.querySelector('#dropbtn-left');
 const dropListCollection = document.querySelector(".dropdown-content-left");
 collection.addEventListener('click', (event) => {
-  dropListCollection.classList.toggle("show");
+  // dropListCollection.classList.toggle("show");
+  toggleShow(dropListCollection);
 });
 
 // Contact Us dropdown content
 const contact = document.querySelector('#dropbtn-right');
 contact.addEventListener('click', (event) => {
   const dropListContact = document.querySelector(".dropdown-content-right");
-  dropListContact.classList.toggle("show");
-
+  // dropListContact.classList.toggle("show");
+  toggleShow(dropListContact);
+  console.log(dropListContact.children);
+  // removeShow(dropListContact.children)
+  const contactArray = collectionToArray(dropListContact.children);
+  console.log(contactArray);
+  // array = [];
+  // for (let i =0; i < dropListContact.children.length; i++){
+  //   array.push(dropListContact.children.item(i));
+  // }
+  removeShow(contactArray);
 });
+
+
 
 
 // Our shops dropdown content
 const shops = document.querySelector('#dropbtn-right-shops');
 const dropListShops = document.querySelector("#dropdown-content-shops");
 shops.addEventListener('click', (event) => {
-  dropListShops.classList.toggle("show");
+  // dropListShops.classList.toggle("show");
+  toggleShow(dropListShops);
+  const shopArray = collectionToArray(dropListShops.children);
+  removeShow(shopArray);
   // if (dropListShops.classList.value.includes('show')) {
   //   alert('it includes');
   // } else {
   //   alert('it does not include');
   // }
-}, true);
+});
 
 
 
@@ -59,6 +90,10 @@ shops.addEventListener('click', (event) => {
 // });
 
 
+
+
+
+
 // Add image to Collection dropdown menu
 const collectionList = document.querySelectorAll('.collection');
 const collectionImage = document.getElementById('image-autumn');
@@ -69,6 +104,9 @@ collectionList.forEach(element => {
   const collectionImageValue = collectionNameImage.firstElementChild.attributes[0].value;
   element.addEventListener('click', (event) => {
     collectionImage.firstElementChild.attributes[0].value = `${collectionImageValue}`;
+    collectionImage.addEventListener('click', (event) => {
+      collectionImage.offsetParent.classList.remove("show");
+    });
   });
 });
 

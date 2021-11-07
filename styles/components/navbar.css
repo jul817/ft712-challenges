@@ -122,3 +122,30 @@ display: none;
 }
 
 .dropdown:hover .dropbtn {border-bottom: solid 1px #303030;}
+
+@media(max-width: 800px) {
+  .navbar-white {
+    display: none;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .navbar-logo {
+    max-width: 35vw;
+    padding: 0;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 600px) {
+  .navbar-logo {
+    max-width: 25vw;
+    padding: 0;
+  }
+}

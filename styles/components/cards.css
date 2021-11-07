@@ -40,3 +40,21 @@
   top: 0px;
   transition: 0.8s all;
 }
+
+@media(max-width: 800px) {
+  .container-card {
+    flex-wrap: wrap;
+    margin: 0 5%;
+  }
+
+  .cards {
+    display: block;
+    max-width: 100%;
+    flex: 100%;
+    margin: 0;
+  }
+
+  .card-category {
+    min-height: 300px;
+  }
+}

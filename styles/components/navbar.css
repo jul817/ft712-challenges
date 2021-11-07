@@ -66,10 +66,14 @@ display: none;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  min-width: 35vw;
+  min-width: 30vw;
   left: 10%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+}
+
+#dropdown-content-contact {
+  min-width: 35vw;
 }
 
 #dropdown-content-products.show, #dropdown-content-shops.show, #dropdown-content-services.show {

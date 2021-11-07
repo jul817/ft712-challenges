@@ -11,13 +11,13 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// toggle to show function
+// toggle classList to "show"
 const toggleShow = (selectedElement) => {
   selectedElement.classList.toggle("show");
 };
 
 
-
+// remove classList "show"
 const removeShow = (selectedElement) => {
   selectedElement.forEach(element => {
     element.addEventListener('click', (event) => {
@@ -26,6 +26,7 @@ const removeShow = (selectedElement) => {
   });
 }
 
+// convert HTMLCollection to array
 const collectionToArray = (collection) => {
   array = [];
   for (let i = 0; i < collection.length; i++) {
@@ -39,7 +40,6 @@ const collectionToArray = (collection) => {
 const collection = document.querySelector('#dropbtn-left');
 const dropListCollection = document.querySelector(".dropdown-content-left");
 collection.addEventListener('click', (event) => {
-  // dropListCollection.classList.toggle("show");
   toggleShow(dropListCollection);
 });
 
@@ -47,52 +47,19 @@ collection.addEventListener('click', (event) => {
 const contact = document.querySelector('#dropbtn-right');
 contact.addEventListener('click', (event) => {
   const dropListContact = document.querySelector(".dropdown-content-right");
-  // dropListContact.classList.toggle("show");
   toggleShow(dropListContact);
-  console.log(dropListContact.children);
-  // removeShow(dropListContact.children)
   const contactArray = collectionToArray(dropListContact.children);
-  console.log(contactArray);
-  // array = [];
-  // for (let i =0; i < dropListContact.children.length; i++){
-  //   array.push(dropListContact.children.item(i));
-  // }
   removeShow(contactArray);
 });
-
-
-
 
 // Our shops dropdown content
 const shops = document.querySelector('#dropbtn-right-shops');
 const dropListShops = document.querySelector("#dropdown-content-shops");
 shops.addEventListener('click', (event) => {
-  // dropListShops.classList.toggle("show");
   toggleShow(dropListShops);
   const shopArray = collectionToArray(dropListShops.children);
   removeShow(shopArray);
-  // if (dropListShops.classList.value.includes('show')) {
-  //   alert('it includes');
-  // } else {
-  //   alert('it does not include');
-  // }
 });
-
-
-
-
-
-// const shopList = document.querySelectorAll('.shop-link');
-// shopList.forEach(element => {
-//   element.addEventListener('mouseout', (event) => {
-//     dropListShops.classList.remove("show");
-//   }, true);
-// });
-
-
-
-
-
 
 // Add image to Collection dropdown menu
 const collectionList = document.querySelectorAll('.collection');
@@ -109,8 +76,6 @@ collectionList.forEach(element => {
     });
   });
 });
-
-
 
 // Display selected image from Collection list as banner
 const dropImage = document.querySelectorAll('.drop-image-item');
@@ -132,19 +97,3 @@ button.addEventListener('click', (event) => {
   window.location.assign('localhost:8000/email');
   emailInput.value = "";
 });
-
-
-  // const documentBody = document.querySelector('body');
-// documentBody.removeEventListener('click', (event) => {
-//   dropListShops.classList.toggle("show");
-// }, true);
-
-// const documentBody = document.querySelector('body');
-// documentBody.addEventListener('click', (event) => {
-//   // const allDropDowns = document
-//   if (dropListShops.classList.value('show')) {
-//     dropListShops.classList.remove('show');
-//   } else {
-//     dropListShops.classList.add('show');
-//   }
-// });
